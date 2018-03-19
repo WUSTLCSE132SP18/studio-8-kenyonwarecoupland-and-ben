@@ -26,7 +26,7 @@ void printCalculatedAccels()
   Serial.print(accel.cy, 3);
   Serial.print(",");
   Serial.print(accel.cz, 3);
-  //Serial.print(",");
+  Serial.print(",");
 }
 void printOrientation()
 {
