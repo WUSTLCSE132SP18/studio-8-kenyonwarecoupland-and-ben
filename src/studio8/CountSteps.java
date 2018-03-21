@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CountSteps {
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner scanner = new Scanner (new File("C:/Users/Ben/git/studio-8-kenyonwarecoupland-and-ben/data/accelNew.csv"));
+		Scanner scanner = new Scanner (new File("C:/Users/shann/git/studio-8-kenyonwarecoupland-and-ben/data/accelNew.csv"));
 		scanner.useDelimiter(",");
 		int counter = 0;
 		int peaks = 0;
@@ -17,9 +17,9 @@ public class CountSteps {
 			last2Var = lastVar;
 			lastVar = var;
 			var = Double.parseDouble(str);
-			//System.out.print(var+"|");
 			counter++;
 			if (counter == 3) {
+				System.out.print(var + "|");
 				if(lastVar > var && lastVar > last2Var) {
 					peaks++;
 				}
